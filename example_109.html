@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Pricing</title>
+  <style>
+    .pricing { display: flex; gap: 20px; }
+    .plan { flex: 1; padding: 20px; border: 1px solid #ccc; }
+    @media (max-width: 600px) {
+      .pricing { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="pricing">
+    <div class="plan">Basic Plan</div>
+    <div class="plan">Pro Plan</div>
+    <div class="plan">Enterprise Plan</div>
+  </div>
+</body>
+</html>

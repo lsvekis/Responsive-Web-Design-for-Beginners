@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Gallery</title>
+  <style>
+    .gallery { display: grid; grid-template-columns: 1fr; gap: 10px; }
+    @media (min-width: 768px) {
+      .gallery { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="img1.jpg" alt="Image 1">
+    <img src="img2.jpg" alt="Image 2">
+    <img src="img3.jpg" alt="Image 3">
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High-Resolution Background</title>
+  <style>
+    .hero { height: 300px; background: url('hero.jpg') center/cover; }
+    @media only screen and (min-resolution: 2dppx) {
+      .hero { background: url('hero@2x.jpg') center/cover; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero"></div>
+</body>
+</html>

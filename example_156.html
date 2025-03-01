@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Submenu</title>
+  <style>
+    .nav-menu ul { list-style: none; padding: 0; }
+    .nav-menu li { position: relative; }
+    .submenu { display: none; }
+    .nav-menu li.active .submenu { display: block; }
+    @media (max-width: 600px) {
+      .nav-menu ul { display: block; }
+      .nav-menu li { margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li id="mobileSubmenu">
+        <a href="#">Services</a>
+        <ul class="submenu">
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    document.getElementById('mobileSubmenu').addEventListener('click', function(e) {
+      e.preventDefault();
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

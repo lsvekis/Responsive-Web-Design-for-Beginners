@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hybrid Navigation</title>
+  <style>
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      align-items: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-around;
+    }
+    .nav a { color: #fff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Logo</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+</body>
+</html>

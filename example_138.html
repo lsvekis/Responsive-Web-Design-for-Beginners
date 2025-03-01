@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Responsive Page</title>
+  <style>
+    :root { font-size: 16px; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 10px; }
+    header, footer { background: #333; color: #fff; text-align: center; padding: 15px; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); }
+    p { font-size: 1rem; line-height: 1.5; }
+    img { max-width: 100%; height: auto; }
+    @media (min-width: 768px) {
+      body { padding: 20px; }
+      header, footer { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header><h1>My Responsive Site</h1></header>
+  <main>
+    <article>
+      <h1>Article Title</h1>
+      <img src="article.jpg" alt="Article Image">
+      <p>This article demonstrates responsive typography and images using mobile-first design principles.</p>
+    </article>
+  </main>
+  <footer>&copy; 2025 My Responsive Site</footer>
+</body>
+</html>

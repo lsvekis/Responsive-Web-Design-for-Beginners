@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variables Example</title>
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --base-font-size: 16px;
+    }
+    body {
+      font-size: var(--base-font-size);
+      color: var(--primary-color);
+    }
+    h1 {
+      font-size: calc(var(--base-font-size) * 2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Scalable Design with CSS Variables</h1>
+  <p>The colors and font sizes are defined using CSS variables.</p>
+</body>
+</html>

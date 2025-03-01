@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlapping Grid Items</title>
+  <style>
+    .overlap-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 200px;
+    }
+    .item1 { grid-column: 1 / span 2; background: #ccc; }
+    .item2 { grid-column: 1; background: #bbb; }
+    .item3 { grid-column: 2; background: #aaa; }
+  </style>
+</head>
+<body>
+  <div class="overlap-grid">
+    <div class="item1">Overlapping Header</div>
+    <div class="item2">Left Content</div>
+    <div class="item3">Right Content</div>
+  </div>
+</body>
+</html>

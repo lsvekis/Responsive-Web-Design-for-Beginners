@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card</title>
+  <style>
+    .card { background: #fff; padding: 20px; border: 1px solid #ccc; }
+    @media (max-width: 600px) {
+      .card { padding: 10px; font-size: 14px; }
+    }
+    @media (min-width: 768px) {
+      .card { padding: 30px; font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Card Title</h2>
+    <p>This card adjusts padding and font size based on the screen width.</p>
+  </div>
+</body>
+</html>

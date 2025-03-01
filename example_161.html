@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Navigation</title>
+  <style>
+    nav ul { list-style: none; display: flex; justify-content: space-around; }
+    nav li { margin: 0 10px; }
+    nav a { text-decoration: none; color: #333; }
+    .menu-text { display: none; }
+    @media (min-width: 768px) {
+      .menu-text { display: inline; margin-left: 5px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#"><img src="home.png" alt="Home"><span class="menu-text">Home</span></a></li>
+      <li><a href="#"><img src="search.png" alt="Search"><span class="menu-text">Search</span></a></li>
+    </ul>
+  </nav>
+</body>
+</html>

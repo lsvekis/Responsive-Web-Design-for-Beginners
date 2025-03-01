@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Navigation</title>
+  <style>
+    nav ul { list-style: none; padding: 0; margin: 0; display: flex; }
+    nav li { position: relative; margin: 0 15px; }
+    nav li ul.dropdown { display: none; position: absolute; top: 100%; left: 0; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav li:hover ul.dropdown { display: block; }
+    nav a { text-decoration: none; color: #333; padding: 5px 0; }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Services</a>
+        <ul class="dropdown">
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

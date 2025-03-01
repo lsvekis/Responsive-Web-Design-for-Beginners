@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Spacing</title>
+  <style>
+    :root { --base-padding: 10px; }
+    body { padding: var(--base-padding); }
+    @media (min-width: 768px) {
+      :root { --base-padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <p>Padding increases on larger screens due to a CSS variable update.</p>
+</body>
+</html>

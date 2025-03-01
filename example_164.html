@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Form and Table</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+    h1 { text-align: center; }
+    /* Form Styles */
+    form {
+      max-width: 500px;
+      margin: 0 auto 40px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+    form label { display: block; margin-bottom: 5px; }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    form button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover { background: #0056b3; }
+    /* Table Styles */
+    .table-container { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
+    @media (max-width: 600px) {
+      /* Stack table rows on mobile */
+      table, thead, tbody, th, td, tr { display: block; }
+      thead tr { position: absolute; top: -9999px; left: -9999px; }
+      tr { margin-bottom: 15px; }
+      td { padding-left: 50%; position: relative; }
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <h1>Our Data</h1>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Name">Alice</td>
+          <td data-label="Age">30</td>
+          <td data-label="City">New York</td>
+        </tr>
+        <tr>
+          <td data-label="Name">Bob</td>
+          <td data-label="Age">25</td>
+          <td data-label="City">Los Angeles</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
