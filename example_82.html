@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline-Grid Buttons</title>
+  <style>
+    .button-group {
+      display: inline-grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 10px;
+    }
+    .button-group button {
+      padding: 10px 15px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-group">
+    <button>One</button>
+    <button>Two</button>
+    <button>Three</button>
+  </div>
+</body>
+</html>

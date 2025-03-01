@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid with Media Queries</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div style="background:#ccc; padding:10px;">1</div>
+    <div style="background:#bbb; padding:10px;">2</div>
+    <div style="background:#aaa; padding:10px;">3</div>
+    <div style="background:#ccc; padding:10px;">4</div>
+  </div>
+</body>
+</html>

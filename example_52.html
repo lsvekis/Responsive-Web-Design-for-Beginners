@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <style>
+    .animate {
+      width: 50px;
+      height: 50px;
+      background-color: coral;
+      position: relative;
+      animation: slide 2s infinite alternate;
+    }
+    @keyframes slide {
+      from { left: 0; }
+      to { left: 200px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="animate"></div>
+</body>
+</html>

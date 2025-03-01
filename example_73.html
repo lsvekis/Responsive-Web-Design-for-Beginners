@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-fit Grid</title>
+  <style>
+    .auto-fit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 10px;
+    }
+    .auto-fit-grid div {
+      background: #ccc;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="auto-fit-grid">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+  </div>
+</body>
+</html>

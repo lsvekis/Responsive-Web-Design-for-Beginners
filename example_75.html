@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Two-Column</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .main { flex: 3; background: #e0e0e0; padding: 20px; }
+    .sidebar { flex: 1; background: #c0c0c0; padding: 20px; }
+    @media (max-width: 768px) {
+      .container { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">Main Content</div>
+    <div class="sidebar">Sidebar</div>
+  </div>
+</body>
+</html>

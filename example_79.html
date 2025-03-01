@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Modal</title>
+  <style>
+    .modal {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 80%;
+      max-width: 500px;
+      margin: 50px auto;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+    .modal header, .modal footer {
+      background: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <header>Modal Header</header>
+    <div>Modal Content goes here.</div>
+    <footer>Modal Footer</footer>
+  </div>
+</body>
+</html>

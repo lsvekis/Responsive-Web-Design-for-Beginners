@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Layout</title>
+  <style>
+    .layout {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .main { flex: 3; padding: 20px; background: #e0e0e0; }
+    .sidebar { flex: 1; padding: 20px; background: #c0c0c0; }
+    @media (max-width: 768px) {
+      .layout { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="main">Main Content</div>
+    <div class="sidebar">Sidebar</div>
+  </div>
+</body>
+</html>

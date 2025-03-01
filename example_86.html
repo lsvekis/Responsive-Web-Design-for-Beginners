@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlapping Banner</title>
+  <style>
+    .banner {
+      display: grid;
+      position: relative;
+      background: url('banner.jpg') no-repeat center/cover;
+      height: 300px;
+    }
+    .banner-text {
+      grid-area: 1 / 1;
+      place-self: center;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="banner-text">Welcome to Our Site</div>
+  </div>
+</body>
+</html>

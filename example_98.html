@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Breakpoints</title>
+  <style>
+    .layout { padding: 10px; background: #eee; }
+    @media (min-width: 480px) { .layout { padding: 20px; } }
+    @media (min-width: 768px) { .layout { padding: 30px; } }
+    @media (min-width: 1024px) { .layout { padding: 40px; } }
+  </style>
+</head>
+<body>
+  <div class="layout">This layout’s padding changes with screen width.</div>
+</body>
+</html>

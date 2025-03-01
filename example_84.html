@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header</title>
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #444;
+      padding: 10px;
+      color: #fff;
+    }
+    nav a { color: #fff; margin-left: 15px; text-decoration: none; }
+    @media (max-width: 600px) {
+      header { flex-direction: column; }
+      nav { margin-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MyLogo</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+</body>
+</html>

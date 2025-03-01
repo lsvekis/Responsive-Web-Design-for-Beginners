@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar with Grid Areas</title>
+  <style>
+    .layout {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-areas: "sidebar content";
+      gap: 10px;
+      padding: 10px;
+    }
+    .sidebar { grid-area: sidebar; background: #bbb; padding: 10px; }
+    .content { grid-area: content; background: #ddd; padding: 10px; }
+      @media (max-width: 768px) {
+      .layout { grid-template-columns: 1fr; grid-template-areas: "sidebar" "content"; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Main Content</div>
+  </div>
+</body>
+</html>
